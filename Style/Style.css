@@ -298,6 +298,28 @@ input[type="button"] {
     cursor: pointer;
 }
 
+#verifyMDP {
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    width: 80px;
+    height: 35px;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #044cd3;
+    color: #fff;
+    cursor: pointer;
+}
+
 #downloadbtn {
     margin: 0;
     padding: 0;
