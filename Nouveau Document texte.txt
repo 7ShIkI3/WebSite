@@ -5,3 +5,12 @@ https://www.youtube.com/watch?v=YpLaERUabwc
     
       <input type="button" value="mdp" onclick="javascript: generatePassword()">
     </div>
+
+    Dans ce code modifié :
+
+J'ai ajouté une ligne pour diviser la chaîne tab en un tableau list à l'aide de la méthode split(). J'ai utilisé le caractère | comme délimiteur pour séparer les éléments de la liste.
+Ensuite, j'ai utilisé la méthode map() pour parcourir chaque élément du tableau list et j'ai utilisé trim() pour supprimer les éventuels espaces supplémentaires autour de chaque élément.
+Le tableau list contenant les éléments de la liste est renvoyé.
+Ainsi, si la valeur de l'élément HTML avec l'ID genMDP est "KwO5nC?|ERzgy", la fonction getList() renverra un tableau contenant les éléments ["KwO5nC?", "ERzgy"].
+
+Veuillez noter que la méthode split() est utilisée ici avec le délimiteur spécifié (dans cet exemple, |), donc assurez-vous d'utiliser le bon délimiteur selon vos besoins spécifiques.
