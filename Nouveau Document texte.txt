@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=YpLaERUabwc
+
+    <div class="action">
+      <input id="genMDP" name="Valeur" type="text" size="30" value="" disabled/>
+    
+      <input type="button" value="mdp" onclick="javascript: generatePassword()">
+    </div>
