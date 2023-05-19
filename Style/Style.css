@@ -297,3 +297,13 @@ input[type="button"] {
     color: #fff;
     cursor: pointer;
 }
+
+#downloadbtn {
+    margin: 0;
+    padding: 0;
+}
+
+.styletest {
+    margin: 0;
+    padding: 0;
+}
