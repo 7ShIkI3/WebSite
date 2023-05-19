@@ -150,11 +150,10 @@ header .contener ul a{
     .part1{
         height: 100vh;
         width: 100%;
-        background-image: url("https://urlz.fr/ly4v");
-        background-position: right 100px;
-        background-position: 1000px 100px;
+        background-image: url("https://urlz.fr/lUYF");
+        background-position: 800px 160px;
         background-size: cover;
-        background-size: 25%;
+        background-size: 50%;
         background-repeat: no-repeat;
     }
 }

@@ -14,3 +14,6 @@ Le tableau list contenant les éléments de la liste est renvoyé.
 Ainsi, si la valeur de l'élément HTML avec l'ID genMDP est "KwO5nC?|ERzgy", la fonction getList() renverra un tableau contenant les éléments ["KwO5nC?", "ERzgy"].
 
 Veuillez noter que la méthode split() est utilisée ici avec le délimiteur spécifié (dans cet exemple, |), donc assurez-vous d'utiliser le bon délimiteur selon vos besoins spécifiques.
+
+https://urlz.fr/ly4v
+https://urlz.fr/lUYD
