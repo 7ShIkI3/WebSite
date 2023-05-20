@@ -17,3 +17,25 @@ Veuillez noter que la méthode split() est utilisée ici avec le délimiteur sp�
 
 https://urlz.fr/ly4v
 https://urlz.fr/lUYD
+
+
+function verifyPassword() {
+  const regex =
+    /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&;|_~&%§*"-`+=]()).{8,}$/;
+  let list = getList();
+
+  if (list.length > 0) {
+    let check = list[0];
+    const checkedValue = check.match(regex); // Use match on the check string
+
+    if (checkedValue === null) {
+      check = "Invalid Password!"; // Add the error message before the check value
+    } else {
+      check = "Good Password!"; // Add the success message before the check value
+    }
+    document.getElementById("verifyMDP").value = check;
+    console.log(check);
+  } else {
+    console.log("Error: No list element found.");
+  }
+}

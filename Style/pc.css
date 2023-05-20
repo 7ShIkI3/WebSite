@@ -206,3 +206,15 @@
   max-width: 400px;
   object-fit: cover;
 }
+
+#verifyMDP {
+  
+}
+
+#verifyMDP.invalid {
+  color: red;
+}
+
+#verifyMDP.valid {
+  color: green;
+}

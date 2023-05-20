@@ -84,3 +84,15 @@
     margin: 40px 0;
   }
 }
+
+#verifyMDP {
+  
+}
+
+#verifyMDP.invalid {
+  color: red;
+}
+
+#verifyMDP.valid {
+  color: green;
+}

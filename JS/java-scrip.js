@@ -49,12 +49,16 @@ function verifyPassword() {
 
   if (list.length > 0) {
     let check = list[0];
-    const checkedValue = check.match(regex); // Use match on the check string
+    const checkedValue = check.match(regex); // Utiliser match sur la chaîne check
 
     if (checkedValue === null) {
-      check = "Invalid Password!"; // Add the error message before the check value
+      check = "Invalid Password!"; // Ajouter le message d'erreur avant la valeur check
+      document.getElementById("verifyMDP").classList.add('invalid');
+      document.getElementById("verifyMDP").classList.remove('valid');
     } else {
-      check = "Good Password"; // Add the success message before the check value
+      check = "Good Password!"; // Ajouter le message de réussite avant la valeur check
+      document.getElementById("verifyMDP").classList.add('valid');
+      document.getElementById("verifyMDP").classList.remove('invalid');
     }
     document.getElementById("verifyMDP").value = check;
     console.log(check);
