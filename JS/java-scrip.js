@@ -66,3 +66,7 @@ function verifyPassword() {
     console.log("Error: No list element found.");
   }
 }
+
+$("#btn-download").click(function() {
+  $(this).toggleClass("downloaded");
+});
