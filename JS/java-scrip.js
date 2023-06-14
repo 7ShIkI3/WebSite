@@ -40,7 +40,6 @@ function generatePassword() {
   document.getElementById("genMDP").value = password;
   console.log(password);
 }
-
 const crypto = require('crypto');
 
 // Fonction pour hacher le mot de passe
@@ -70,7 +69,7 @@ function verifyPassword() {
   let list = getList();
 
   if (list.length > 0) {
-    const isCompromised = isPasswordCompromised(password, list); // Utiliser la fonction isPasswordCompromised
+    const isCompromised = isPasswordCompromised(password, list);
 
     if (isCompromised) {
       document.getElementById("verifyMDP").value = "Invalid Password!";
@@ -81,8 +80,7 @@ function verifyPassword() {
       document.getElementById("verifyMDP").classList.add('valid');
       document.getElementById("verifyMDP").classList.remove('invalid');
     }
-    document.getElementById("verifyMDP").value = check;
-    console.log(check);
+    console.log(document.getElementById("verifyMDP").value);
   } else {
     console.log("Error: No list element found.");
   }
