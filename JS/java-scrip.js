@@ -64,12 +64,6 @@ const database = ['b5f7e53d0a87a7ef0a49dd4a60e8fffa']; // Exemple d'un mot de pa
 const password = 'monmotdepasse';
 const isCompromised = isPasswordCompromised(password, database);
 
-if (isCompromised) {
-  console.log('Le mot de passe est compromis.');
-} else {
-  console.log('Le mot de passe n\'est pas compromis.');
-}
-
 
 function verifyPassword() {
   const password = document.getElementById("verifyMDP").value;
@@ -87,6 +81,8 @@ function verifyPassword() {
       document.getElementById("verifyMDP").classList.add('valid');
       document.getElementById("verifyMDP").classList.remove('invalid');
     }
+    document.getElementById("verifyMDP").value = check;
+    console.log(check);
   } else {
     console.log("Error: No list element found.");
   }
